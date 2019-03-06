@@ -15,11 +15,12 @@ auto main() -> int
         cin >> num[i];
     }
     cout << DivideAndConquer(num, 0, K - 1);
+    system("pause");
     return 0;
 }
 int DivideAndConquer(int List[], int Left, int Right)
 {
-    int MaxLeftSum, MaxRightSum;             //存放左右两边各自的最大子列和
+    int MaxLeftSum=0, MaxRightSum=0;             //存放左右两边各自的最大子列和
     int MaxLeftBorderSum, MaxRightBorderSum; //跨界的最大子列和
 
     int LeftBorderSum, RightBorderSum;
